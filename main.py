@@ -11,6 +11,7 @@ client = OpenAI(
 request = "Write me 50 single script lines by Stargate characters followed by the corresponding witty response from jack O'Neill \
 from the Stargate SG1 series four scripts. You must only use format [Q: quote ; R: response] and no other."
 
+# model="gpt-4",
 completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=[
